@@ -30,7 +30,7 @@ let track_list = [
   {
     name: "Hamari Adhuri Kahani",
     artist: "Arijit Singh",
-    image: "covers/hamari.jpg",
+    image: "https://images.app.goo.gl/NBdc4HQY8jZbHnGJ7",
     path: "singer/adhuri.mp3"
   },
   {
