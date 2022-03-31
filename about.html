@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuzion-About Us</title><link rel="icon" href="covers/brand.png">
+<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">  
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.contact-us-footer img:hover
+{
+  opacity: 0.7;
+}
+
+
+td{
+    padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+
+.founder{
+    height:300px;
+}
+
+
+.container-about {
+  padding: 0 20px;
+}
+
+.container-about::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* /////////////////////////////////navbar////////////////////// */
+
+
+          
+body {
+        margin: 0;
+        
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+       font-family: Arial, Helvetica, sans-serif; 
+      }
+      
+      .topnav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #04AA6D;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: rgb(233, 17, 17) ;
+        color: white;
+      }
+
+      /* ///////////////////////////////////footer////////////////////////////////////////////////////////////////// */
+
+     
+
+
+
+
+ 
+/* Simple reset */
+#body *, #footer *{ margin: 0; padding: 0; display: block; color: #3d3d3d; font-family: "Open Sans", sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; line-height: 1; outline: 0; } 
+ 
+ /* FontAwesome */
+     @font-face{ font-family: "FontAwesome"; src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; } 
+  
+ /* Queries */
+     /* Min */
+     @media (min-width: 0){ 
+       
+             body{ min-width: 200px; } 
+                 #body{  } 
+                     #page{ padding: 4em; background: #fff; } 
+                         #page > h2{ color: #444; font-size: 1.25em; font-weight: 600; text-transform: uppercase; } 
+                         #page > p{ margin-top: 2em; line-height: 1.25; } 
+                 #footer{ background: #202020; } 
+                     #cta{ padding: 4em; background: #350f55; } 
+                         #cta > h2{ color: #fff; font-size: 2em; font-weight: 600; text-transform: uppercase; text-align: center; } 
+                         #cta > p{ margin-top: 1em; color: #ddd; text-align: center; line-height: 1.5; } 
+                         #cta > form{ margin: 0 auto; margin-top: 2em; max-width: 40em; } 
+                             #cta > form{ position: relative; } 
+                                 #cta > form > input[type=text]{ padding: 1em; padding-right: 7em; width: 100%; height: 4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+                                 #cta > form > input[type=submit]{ position: absolute; top: 0; right: 0; bottom: 0; padding: 1em; height: 4em; color: #fff; font-weight: 600; background: #fe9909; border: 0; cursor: pointer; } 
+                                 #cta > form > input[type=submit]:hover{ background: #fdca40; } 
+                     #resources{  } 
+                         #resources > h2{ display: none; }
+                         #modules{ padding: 4em; margin-bottom: -2em; } 
+                             #modules > h2{ display: none; } 
+                             #modules > .module{  } 
+                                 #modules > .module > h3{ margin-bottom: 2em; color: #f2f0ed; font-size: 1.25em; font-weight: 600; text-transform: uppercase; text-align: center; } 
+                                 #modules > .module > p{ margin-bottom: 2em; color: #f2f0ed; line-height: 1.25; } 
+                                 #modules > .module > ul{ margin-bottom: 2em; } 
+                                     #modules > .module > ul > li{ color: #f2f0ed; line-height: 1.25; } 
+                                         #modules > .module > ul > li > a{ color: #fe9909; line-height: 1.25; } 
+                                         #modules > .module > ul > li.mail > a:before{ content: "\f003"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                         #modules > .module > ul > li.phone > a:before{ content: "\f095"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                         #modules > .module > ul > li.facebook > a:before{ content: "\f09a"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                         #modules > .module > ul > li.twitter > a:before{ content: "\f099"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                         #modules > .module > ul > li > a:hover{ color: #fdca40; } 
+                     #signature{  } 
+                     #legal{ padding: 2em 4em; background: #f9f8f7; } 
+                         #legal > p{ font-size: 0.75em; text-align: center; } 
+                             #legal > p > a{ display: inline; color: #fe9909; line-height: 1.25; text-decoration: underline; } 
+                             #legal > p > a:hover{ color: #fdca40; } 
+     }
+     /* Bricks */
+     @media (min-width: 200px){ 
+ 
+             body{  } 
+     } 
+     /* Smartphones */
+     @media (min-width: 300px){ 
+         html{  } 
+             body{  } 
+     } 
+     /* Retina */
+     @media (min-width: 479px){ 
+        
+             body{  } 
+     } 
+     /* Tablet */
+     @media (min-width: 768px){ 
+         html{  } 
+             body{  } 
+                 #body{  } 
+                     #resources{  } 
+                         #modules{ overflow: hidden; } 
+                             #modules > .module{ float: left; width: 50%; } 
+                                 #modules > .module > h3{ text-align: left; } 
+                                 #modules > .module:nth-child(odd) > h3{ text-align: right; } 
+                                 #modules > .module > p{  }  
+                                 #modules > .module:nth-child(odd) > p{ text-align: right; } 
+                                 #modules > .module > ul{  } 
+                                     #modules > .module > ul > li{  } 
+                                     #modules > .module:nth-child(odd) > ul > li{ text-align: right; } 
+                                         #modules > .module > ul > li > a{  } 
+     } 
+     /* Desktop */
+     @media (min-width: 979px){ 
+       
+             body{  } 
+                 #body{  } 
+                     #resources{  } 
+                         #modules{  } 
+                             #modules > .module{ width: 25%; } 
+                                 #modules > .module > h3{ text-align: left; } 
+                                 #modules > .module:nth-child(odd) > h3{ text-align: left; } 
+                                 #modules > .module > p{  } 
+                                 #modules > .module:nth-child(odd) > p{ text-align: left; } 
+                                 #modules > .module > ul{  } 
+                                     #modules > .module > ul > li{  } 
+                                     #modules > .module:nth-child(odd) > ul > li{ text-align: left; } 
+                                         #modules > .module > ul > li > a{  } 
+     } 
+     /* Widescreen */
+     @media (min-width: 1800px){ 
+         
+             body{  } 
+     } 
+     /* Max */
+     @media (min-width: 2800px){ 
+      
+             body{  } 
+     } 
+ 
+
+</style>
+</head>
+<body>
+
+  
+  <nav>
+    <ul>
+        <li class="brand">
+<div id="mySidenav" class="sidenav">
+<center><h3>Quick Access</h3></center>
+<!-- <hr size="10"color="#111"> -->
+<pre> </pre>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="post-login.html">Movies</a>
+<a href="">Radio</a>
+<a href="#">Old Songs</a>
+<a href="#">New Songs</a>
+<a href="#">Party</a>
+<a href="#">Romance</a>
+<a href="#">90s & early 2000s</a>
+<a href="#">Album</a>
+<a href="#">India's Music</a>
+<a href="#">Music Labels</a>
+<a href="#">Genres</a>
+
+
+
+
+
+
+<script>
+
+function openForm() {
+document.getElementById("myForm").style.display = "block";
+
+}
+function closeForm() {
+document.getElementById("myForm").style.display = "none";
+
+}
+
+</script>
+
+<hr size="20" color="#111">
+
+
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+
+
+
+
+}
+</script>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- 
+<hr color="black" size="6" style="display:flex;
+flex-direction: column;"> -->
+
+
+
+         
+<pre>  </pre>
+<a href="index.html"><img style="zoom: 120%;" src="covers/brand.png" alt="Spotify"></a>
+<a class="spotify" href ="index.html">Fuzion</a></li>
+
+        <!-- <li><a href="https://www.google.co.in/" style="text-decoration: none;
+                                                          color:white;">Google</a></li> -->
+        <li><a  style="text-decoration: none; color: white;" href=about.html >About</a></li>
+        
+         <li><a class="contact" href="Contact us.html">Contact Us</a></li>
+         
+<div class="dropdown">
+<button class="dropbtn">Artist</button>
+<div class="dropdown-content">
+  
+  <a href="singer.html">Arijit Singh</a>
+  <a href="singer2.html">Atif Aslam</a>
+  <a href="singer4.html">Sonu Nigam</a>
+  <a href="singer4.html">Anupam Roy</a>
+  <a href="singer5.html">shreya Ghoshal</a>
+</div>
+
+
+</div>
+
+
+   </ul>      
+</nav>
+
+
+
+
+
+
+
+
+      
+      <div style="padding-left:16px">
+        
+      </div>
+
+
+
+
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quod dolor facere iure vero ab, 
+    voluptatem culpa explicabo magni unde omnis rem odit expedita hic deleniti, distinctio ad nihil nulla esse consectetur.</p>
+
+  <br>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+<br>
+<h2 style="text-align:center">Our Team</h2>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="founder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJ7Yv-Toq0hbv17nHN7aWrUrhambEOV90hCWLTD7VH4VK2GnyoTB1xKQR6MOKyzQzO6o&usqp=CAU" alt="Jane" style="width:100%">
+      <div class="container-about">
+        <br>
+        
+        <h2>Jane Doe</h2>
+        <br>
+        
+        <p class="title">CEO & Founder</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ea quos expedita ut sunt nulla, suscipit, odit quis aliquid voluptatum fugit enim numquam. 
+        A quod error labore dolorum. Porro sunt est voluptate accusantium! Corporis officiis, 
+        adipisci ratione excepturi exercitationem molestiae in eius sit dolore necessitatibus. 
+        </p><br>
+        <p>jane@example.com</p>
+        <br>
+      
+        <p><button class="button">Contact</button></p>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="founder" src="https://ylpapp.isb.edu/user/Passport_photo_samples/Sample-3---wrong.jpg" alt="Mike" style="width:100%">
+      <div class="container-about">
+        <br>
+        <h2>Mike Ross</h2>
+        <br>
+        <p class="title">Art Director</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ea quos expedita ut sunt nulla, suscipit, odit quis aliquid voluptatum fugit enim numquam. 
+            A quod error labore dolorum. Porro sunt est voluptate accusantium! Corporis officiis, 
+            adipisci ratione excepturi exercitationem molestiae in eius sit dolore necessitatibus. .</p><br>
+        <p>mike@example.com</p><br>
+        <p><button class="button">Contact</button></p><br>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="founder" src="https://www.magezinepublishing.com/equipment/images/equipment/Galaxy-S8-6440/highres/Samsung-Galaxy-S8-Lucy-Portrait-20170601_154812_1496658081.jpg" alt="John" style="width:100%">
+      <div class="container-about"><br>
+        <h2>John Doe</h2><br>
+        <p class="title">Designer</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ea quos expedita ut sunt nulla, suscipit, odit quis aliquid voluptatum fugit enim numquam. 
+            A quod error labore dolorum. Porro sunt est voluptate accusantium! Corporis officiis, 
+            adipisci ratione excepturi exercitationem molestiae in eius sit dolore necessitatibus. </p><br>
+        <p>john@example.com</p><br>
+        <p><button class="button">Contact</button></p><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+<main id="body"> 
+  
+</main> 
+<div id="footer"> 
+  <section id="cta"> 
+      <h2>Call-to-action</h2> 
+      <p>Call-to-action message body.</p> 
+      <form> 
+          <input type="text" placeholder="E-mail address" /> 
+          <input type="submit" value="Try now" /> 
+      </form> 
+  </section> 
+  <section id="resources"> 
+      <h2>Resources</h2> 
+      <div id="modules"> 
+          <h2>Resources</h2> 
+          <div class="module"> 
+              <h3>Product</h3> 
+              <ul> 
+                  <li><a href="">Pricing</a></li> 
+                  <li><a href="">Features</a></li> 
+                  <li><a href="">Documentation</a></li> 
+                  <li><a href="">Developers</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <ul> 
+                  <li><a href="">Mission</a></li> 
+                  <li><a href="">History</a></li> 
+                  <li><a href="">Staff</a></li> 
+                  <li><a href="">Management</a></li> 
+                  <li><a href="">Contact</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Contact</h3> 
+              <ul> 
+                  <li class="mail"><a href="">Support</a></li> 
+                  <li class="phone"><a href="">+0 1 234 567</a></li> 
+                  <li class="twitter"><a href="">@company</a></li> 
+                  <li class="facebook"><a href="">Company</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <p>Text area used for company description, address and company logo.</p> 
+              <ul> 
+                  <li>Company street 123</li> 
+                  <li>123 45 City, Country</li> 
+              </ul> 
+          </div> 
+      </div> 
+  </section> 
+  <div id="signature" aria-hidden="true"></div> 
+  <footer id="legal"> 
+      <p>&copy; 3000 by Company. All rights reserved. Please read the <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p> 
+  </footer> 
+</div> 
+
+
+</html>

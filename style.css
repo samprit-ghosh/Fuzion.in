@@ -1,0 +1,707 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); */
+
+
+                         
+input.submit:hover{
+    background-color: limegreen;
+    }
+   .submit{
+       padding: 8px;
+     
+   }
+
+   
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+}
+
+nav a{
+text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255); 
+}
+
+ul li{
+    padding: 0 12px;
+    
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+   min-height: 72vh;
+   /* background-color: rgb(226, 0, 0); */
+   color: rgb(266,0,0);
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 75%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('music1.jpg');
+   background-position: left;
+   background-size:cover;
+   background-repeat: no-repeat;
+   max-width: 100%;
+   height: auto;
+   zoom: 100%;
+  
+}
+
+.bottom{
+    max-width: 100%;
+    height: auto;
+    /* position:; */
+    bottom: 0;
+    color: #000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-image: url('https://thumbs.dreamstime.com/b/dirty-music-background-21777451.jpg');
+    background-position:bottom;
+} 
+
+
+.icons{
+    margin-top: 14px; 
+    align-content: center;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+
+}
+
+.songItem{
+   
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 10px;
+    justify-content: space-between;
+    align-items:center;
+    border-radius: 34px;
+    max-width: 120%;
+    height: auto;
+    
+}
+
+.songName{
+max-width: 40%; 
+height: auto;
+ 
+}
+
+
+
+.songItem img{
+    width: 43px;
+    margin: 0 33px;
+    border-radius: 44px;
+    max-width: 100%;
+    height: auto;
+    zoom:auto;
+
+}
+
+.timestamp{
+    max-width: 120%;
+    height: max-content;
+    margin: 0 23px;
+}
+
+.timestamp i{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 17vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+
+.r{
+    align-items: bottom;
+    align-content: bottom;
+    text-align:bottom;
+}
+
+.grad{
+    
+    /* background-image:linear-gradient(red, yellow, blue); ; */
+    max-width: 100%;
+    height: auto;
+ background-image: linear-gradient(red, yellow, blue);;
+ background-repeat: no-repeat;
+ backface-visibility:inherit;
+ background-size: cover;
+} 
+
+.mobile-artist{
+   background-image: radial-gradient(rgb(24, 24, 134),rgb(153, 40, 40));
+    color: beige;;
+}
+
+.change{
+            cursor: pointer;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+
+        /* .changee {
+            cursor: pointer;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        } */
+img.avtar{
+  border-bottom-left-radius: 70%;
+  border-top-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  border-top-right-radius: 70%;
+  height: 150px;
+  padding: 50px;
+  width:150px;
+}
+.mode{
+    float: right;
+    padding: 30px;
+}
+
+.dark{
+  background-image: radial-gradient( rgb(109, 0, 109),darkblue,rgb(153, 40, 40));
+  /* color: rgb(223, 0, 0); */
+}
+
+
+/* .button{
+    /* background-color: rgb(12, 162, 182); */
+    
+    
+.photo{
+  border-bottom-left-radius: 70%;
+  border-top-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  border-top-right-radius: 70%;
+  height: 200px;
+  width:200px;
+  padding: 40px;
+}
+
+
+#download{
+  text-decoration: none;
+  color: black;
+}
+
+.gallery{
+padding:9px;
+}
+
+.artist-area{
+    background-image: radial-gradient(rgb(24, 24, 134),rgb(153, 40, 40));
+    color: beige;
+}
+.image{
+    display:inline-flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+@media(max-width:2500px){
+    .mobile-artist{
+        display: none;
+    }
+} 
+
+
+@media(max-width:1262px){
+    .artist-area{
+        display: none;
+    }
+    .mobile-artist{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+@media(max-width:647px){
+.songName{
+  max-width: 30%;
+}
+.container{
+  zoom:80%;
+}
+}
+
+
+
+@media(max-width:370px){
+.container{
+  zoom:62%;
+}
+}
+
+nav ul li select{
+    align-items:center;
+}
+
+
+a.contact{
+
+text-decoration: none;
+color:white;
+
+}
+
+
+.spotify{
+
+text-decoration: none;
+color: white;
+
+
+}
+
+
+.color{
+background-color: rgb(255, 208, 0);
+color: yellow;
+
+}
+
+ .CopyrightText{
+    
+    max-width:100%;
+    height:auto;
+    background: #181818;
+    padding: 14px 1px;
+      text-align: center;
+    color: #999;
+}   
+
+.globe{
+    max-width: 100%;
+    max-zoom: normal;
+    /* height: auto; */
+}
+
+
+/* 
+//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// */
+
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  } 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.781);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(16, 175, 16);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #000000;}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #5dfc13;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+
+
+@media (max-width: 540px){
+
+
+
+
+nav{
+    zoom:80%
+}
+.container{
+    zoom:60%
+}
+
+
+}
+
+
+
+@media (max-width: 470px){
+
+    
+    body{
+        zoom:75%
+    }
+    
+    nav{
+        zoom:95%
+    }
+    .container{
+        zoom:80%
+    }
+   
+
+nav ul{
+    display: flex;
+    align-items: left;
+    list-style-type: none;
+    height:60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+    
+}
+
+    }
+  
+#chartdiv {
+    width: 100%;
+    height: 280px;
+    align-items: center;
+    background-color:#000033;
+  } 
+  
+  td{
+    padding: 10px;
+    
+  }
+  header{
+    background-color: rgb(0, 0, 0);
+    background-image: url('bg1.jpg');
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size:cover;
+  }
+   
+
+    @media (max-width: 440px){
+
+        
+        body{
+            zoom:70%
+        }
+        
+        nav ul{
+            zoom:85%
+        }
+        .container{
+            zoom:80%
+        } 
+    }
+ 
+    @media (max-width: 580px){
+
+    
+        body{
+            zoom:75%
+        }
+        
+        nav{
+            zoom:100%
+        }
+        .container{
+            zoom:80%
+        } 
+    }
+ 
+
+    @media (max-width: 370px){
+
+        
+        body{
+            zoom:90%
+        }
+        
+        nav{
+            zoom:80%
+        }
+        /* .container{
+            zoom:80%
+        }  */
+    }
+ @media(max-width:365px)
+ {
+     .container{
+         zoom:60%
+     }
+     nav{
+         zoom:70%;
+     }
+     body{
+         zoom:80%;
+     }
+ }
+
+ @media(max-width:323px)
+ {
+     .container{
+         zoom:50%
+     }
+     nav{
+         zoom:70%;
+     }
+     body{
+         zoom:70%;
+     }
+ }
+
+
+ @media(max-width:389px)
+ {
+     .container{
+         zoom:50%
+     }
+     nav{
+         zoom:70%;
+     }
+     body{
+         zoom:60%;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Simple reset */
+#body *, #footer *{ margin: 0; padding: 0; display: block; color: #3d3d3d; font-family: "Open Sans", sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; line-height: 1; outline: 0; } 
+ 
+/* FontAwesome */
+    @font-face{ font-family: "FontAwesome"; src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; } 
+ 
+/* Queries */
+    /* Min */
+    @media (min-width: 0){ 
+      
+            body{ min-width: 200px; } 
+                #body{  } 
+                    #page{ padding: 4em; background: #fff; } 
+                        #page > h2{ color: #444; font-size: 1.25em; font-weight: 600; text-transform: uppercase; } 
+                        #page > p{ margin-top: 2em; line-height: 1.25; } 
+                #footer{ background: #202020; } 
+                    #cta{ padding: 4em; background: #350f55; } 
+                        #cta > h2{ color: #fff; font-size: 2em; font-weight: 600; text-transform: uppercase; text-align: center; } 
+                        #cta > p{ margin-top: 1em; color: #ddd; text-align: center; line-height: 1.5; } 
+                        #cta > form{ margin: 0 auto; margin-top: 2em; max-width: 40em; } 
+                            #cta > form{ position: relative; } 
+                                #cta > form > input[type=text]{ padding: 1em; padding-right: 7em; width: 100%; height: 4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+                                #cta > form > input[type=submit]{ position: absolute; top: 0; right: 0; bottom: 0; padding: 1em; height: 4em; color: #fff; font-weight: 600; background: #fe9909; border: 0; cursor: pointer; } 
+                                #cta > form > input[type=submit]:hover{ background: #fdca40; } 
+                    #resources{  } 
+                        #resources > h2{ display: none; }
+                        #modules{ padding: 4em; margin-bottom: -2em; } 
+                            #modules > h2{ display: none; } 
+                            #modules > .module{  } 
+                                #modules > .module > h3{ margin-bottom: 2em; color: #f2f0ed; font-size: 1.25em; font-weight: 600; text-transform: uppercase; text-align: center; } 
+                                #modules > .module > p{ margin-bottom: 2em; color: #f2f0ed; line-height: 1.25; } 
+                                #modules > .module > ul{ margin-bottom: 2em; } 
+                                    #modules > .module > ul > li{ color: #f2f0ed; line-height: 1.25; } 
+                                        #modules > .module > ul > li > a{ color: #fe9909; line-height: 1.25; } 
+                                        #modules > .module > ul > li.mail > a:before{ content: "\f003"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.phone > a:before{ content: "\f095"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.facebook > a:before{ content: "\f09a"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.twitter > a:before{ content: "\f099"; margin: 0 0.5em 0 0; display: inline-block; color: #f9f8f7; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li > a:hover{ color: #fdca40; } 
+                    #signature{  } 
+                    #legal{ padding: 2em 4em; background: #f9f8f7; } 
+                        #legal > p{ font-size: 0.75em; text-align: center; } 
+                            #legal > p > a{ display: inline; color: #fe9909; line-height: 1.25; text-decoration: underline; } 
+                            #legal > p > a:hover{ color: #fdca40; } 
+    }
+    /* Bricks */
+    @media (min-width: 200px){ 
+
+            body{  } 
+    } 
+    /* Smartphones */
+    @media (min-width: 300px){ 
+        html{  } 
+            body{  } 
+    } 
+    /* Retina */
+    @media (min-width: 479px){ 
+       
+            body{  } 
+    } 
+    /* Tablet */
+    @media (min-width: 768px){ 
+        html{  } 
+            body{  } 
+                #body{  } 
+                    #resources{  } 
+                        #modules{ overflow: hidden; } 
+                            #modules > .module{ float: left; width: 50%; } 
+                                #modules > .module > h3{ text-align: left; } 
+                                #modules > .module:nth-child(odd) > h3{ text-align: right; } 
+                                #modules > .module > p{  }  
+                                #modules > .module:nth-child(odd) > p{ text-align: right; } 
+                                #modules > .module > ul{  } 
+                                    #modules > .module > ul > li{  } 
+                                    #modules > .module:nth-child(odd) > ul > li{ text-align: right; } 
+                                        #modules > .module > ul > li > a{  } 
+    } 
+    /* Desktop */
+    @media (min-width: 979px){ 
+      
+            body{  } 
+                #body{  } 
+                    #resources{  } 
+                        #modules{  } 
+                            #modules > .module{ width: 25%; } 
+                                #modules > .module > h3{ text-align: left; } 
+                                #modules > .module:nth-child(odd) > h3{ text-align: left; } 
+                                #modules > .module > p{  } 
+                                #modules > .module:nth-child(odd) > p{ text-align: left; } 
+                                #modules > .module > ul{  } 
+                                    #modules > .module > ul > li{  } 
+                                    #modules > .module:nth-child(odd) > ul > li{ text-align: left; } 
+                                        #modules > .module > ul > li > a{  } 
+    } 
+    /* Widescreen */
+    @media (min-width: 1800px){ 
+        
+            body{  } 
+    } 
+    /* Max */
+    @media (min-width: 2800px){ 
+     
+            body{  } 
+    } 
+

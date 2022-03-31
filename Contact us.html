@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzion- Contact us</title> <link rel = "icon" href ="covers/brand.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact -us-css.css">
+   
+
+
+
+<nav>
+        <ul>
+            <li class="brand">
+<div id="mySidenav" class="sidenav">
+   <center><h3>Quick Access</h3></center>
+   <hr size="10"color="#111">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+    <a href="post-login.html">Movies</a>
+    <a href="#">Radio</a>
+    <a href="#">Old Songs</a>
+    <a href="#">New Songs</a>
+    <a href="#">Party</a>
+    <a href="#">Romance</a>
+    <a href="#">90s & early 2000s</a>
+    <a href="#">Album</a>
+    <a href="#">India's Music</a>
+    <a href="#">Music Labels</a>
+    <a href="#">Genres</a>
+
+
+   <hr size="20" color="#111">
+   
+
+
+  </div>
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+              <pre>  </pre>
+              <a href="index.html"><img src="covers/brand.png" style="zoom: 75%;" ></a>
+              <a class="spotify"href ="index.html">Fuzion</a></li>
+
+           
+               <li><a  style="text-decoration: none; color: white;" href="about.html" >About</a></li>
+            
+            
+             
+<div class="dropdown">
+    <button class="dropbtn">Artist</button>
+    <div class="dropdown-content">
+      
+      <a href="singer.html">Arijit Singh</a>
+      <a href="singer2.html">Atif Aslam</a>
+      <a href="singer4.html">Sonu Nigam</a>
+      <a href="singer4.html">Anupam Roy</a>
+      <a href="singer5.html">shreya Ghoshal</a>
+    </div>
+    
+  </div>
+        </ul>      
+    </nav>
+</head>
+
+
+
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <div id="chartdiv"></div>
+  <script>
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    var chart = am4core.create("chartdiv", am4maps.MapChart);
+    
+    // Set map definition
+    chart.geodata = am4geodata_worldLow;
+    
+    // Set projection
+    chart.projection = new am4maps.projections.Orthographic();
+    chart.panBehavior = "rotateLongLat";
+    chart.deltaLatitude = -20;
+    chart.padding(20,20,20,20);
+    
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+    
+    // Make map load polygon (like country names) data from GeoJSON
+    polygonSeries.useGeodata = true;
+    //polygonSeries.include = ["BR", "UA", "MX", "CI"];
+    
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.fill = am4core.color("#FF6633");
+    polygonTemplate.stroke = am4core.color("#000033");
+    polygonTemplate.strokeWidth = 0.5;
+    polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+    polygonTemplate.url = "https://www.datadrum.com/main.php?package={id}";
+    polygonTemplate.urlTarget = "_blank";
+    
+    var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
+    graticuleSeries.mapLines.template.line.stroke = am4core.color("#ffffff");
+    graticuleSeries.mapLines.template.line.strokeOpacity = 0.08;
+    graticuleSeries.fitExtent = false;
+    
+    
+    chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
+    chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+    
+    // Create hover state and set alternative fill color
+    var hs = polygonTemplate.states.create("hover");
+    hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
+    
+    let animation;
+    setTimeout(function(){
+      animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+    }, 3000)
+    
+    chart.seriesContainer.events.on("down", function(){
+    //  animation.stop();
+    })</script> 
+<body>
+    <div class="roboto-font">
+<header>
+  <form class = "zoom"  action="Contact us.html" onSubmit="return(validate());" name="StudentRegistration"> 
+  
+  <center>
+    <table rwidth="20%"cellspacing="20" cellpadding="20" style="background-color: rgba(73,0,255,0.425);">
+      <br>
+      <br>
+  
+      
+  
+  
+  
+      <tr>
+        <caption style="background-color: rgba(73, 0, 255, 0.425);">
+        <b><font size="5" color="white" fontstyle="times new roman"><br>Contact us</b></font></b>
+            </caption></tr>
+  
+  
+        <tr>
+            <td class="a1"><font color="white"> First Name</td>
+            <td ><input type="text" name="First Name" id="First Name"size="30" placeholder="Your name.."required></td>
+          </tr>
+  
+             
+               <tr>
+              <td> <font color="white">Last Name</td>
+            <td width="20"><input id="Last Name" name="Last Name" type="text"size="30"height="10" placeholder="Your last name.."required></td>
+                     </tr>
+  
+            
+              <tr>
+              <td> <font color="white">Email </td>
+            <td ><input name="Email" id="Email"type="Email"size="30"height="10" placeholder="Your email id.." required></td>
+          </tr>
+   
+  
+  
+              <tr>
+              <td><font color="white">Phone no:</td>
+            <td><input name="Phone no:" id="Phone no"type="input"size="30" placeholder="0000000000"></td>
+          </tr>
+  
+          <tr>
+            <td><font color="white">Country</td>
+          <td>
+            <select name="Country" id="cars">
+            <option value="" disabled selected>Choose Country</option>
+            <option style=font-size:110%; >India</option>
+            <option style=font-size:110%; >Indonesia</option>
+            <option style=font-size:110%; >Pakistan</option>
+            <option style=font-size:110%; >United Arab Emirates</option>
+            <option style=font-size:110%; >Sri Lanka</option>
+            <option style=font-size:110%; "saab">Independent and Sovereign Republic of Kiribati</option>
+            <option style=font-size:110%; "mercedes">State of Palestine</option>
+            <option style=font-size:110%; "audi">	Saudi Arabia</option>
+            <option style=font-size:110%; "volvo">Russia</option>
+            <option style=font-size:110%; "saab">China</option>
+            <option style=font-size:110%; "mercedes">Japan</option>
+            <option style=font-size:110%; "audi">Bangladesh</option>
+            <option style=font-size:110%; "volvo">North Korea</option>
+            <option style=font-size:110%; "saab"> Nepal</option>
+            <option style=font-size:110%; "mercedes">Federal Democratic Republic of Ethiopia</option>
+            <option style=font-size:110%; "audi">The Democratic People's Republic of Korea</option>
+  
+    </td 
+          </tr>
+        <tr>
+          <td><font color="white">State</td>
+        <td>
+          <select id="country-state" name="State" >
+            <option value="" disabled selected>Choose State</option>
+              <option style=font-size:110% > Andaman and Nicobar Islands</option>
+              <option style=font-size:110% > Andhra Pradesh</option>
+              <option style=font-size:110% > Arunachal Pradesh</option>
+              <option style=font-size:110%> Assam</option>
+              <option style=font-size:110%> Bihar</option>
+              <option style=font-size:110% > Chandigarh</option>
+              <option style=font-size:110%> Chhattisgarh</option>
+              <option style=font-size:110%> Dadra and Nagar Haveli</option>
+              <option style=font-size:110%> Daman and Diu</option>
+              <option style=font-size:110%> Delhi</option>
+              <option style=font-size:110%> Goa</option>
+              <option style=font-size:110%> Gujarat</option>
+              <option style=font-size:110%> Haryana</option>
+              <option style=font-size:110%> Himachal Pradesh</option>
+              <option style=font-size:110%> Jammu and Kashmir</option>
+              <option style=font-size:110%> Jharkhand</option>
+              <option style=font-size:110%> Karnataka</option>
+              <option style=font-size:110%> Kerala</option>
+              <option style=font-size:110%> Ladakh</option>
+              <option style=font-size:110%> Lakshadweep</option>
+              <option style=font-size:110% value="MP">Madhya Pradesh</option>
+              <option style=font-size:110% value="MH">Maharashtra</option>
+              <option style=font-size:110% value="MN">Manipur</option>
+              <option style=font-size:110% value="ML">Meghalaya</option>
+              <option style=font-size:110% value="MZ">Mizoram</option>
+              <option style=font-size:110% value="NL">Nagaland</option>
+              <option style=font-size:110% value="OR">Odisha</option>
+              <option style=font-size:110% value="PY">Puducherry</option>
+              <option style=font-size:110% value="PB">Punjab</option>
+              <option style=font-size:110% value="RJ">Rajasthan</option>
+              <option style=font-size:110% value="SK">Sikkim</option>
+              <option style=font-size:110% value="TN">Tamil Nadu</option>
+              <option style=font-size:110% value="TG">Telangana</option>
+              <option style=font-size:110% value="TR">Tripura</option>
+              <option style=font-size:110% value="UP">Uttar Pradesh</option>
+              <option style=font-size:110% value="UT">Uttarakhand</option>
+              <option style=font-size:110% value="WB">West Bengal</option>
+          </select>
+       </td>
+      </tr>
+  
+      <tr>
+        <td><font color="white">City</td>
+      <td>
+        <select id="country-state" name="City">
+          <option value="" disabled selected>Choose City</option>
+            <option style=font-size:110%;> Mumbai</option>
+            <option style=font-size:110%;> Surat</option>
+            <option style=font-size:110%;> Pune</option>
+            <option style=font-size:110%;> Jaipur</option>
+            <option style=font-size:110%;> Bihar</option>
+            <option style=font-size:110%;> Kolkata</option>
+            <option style=font-size:110%;> Delhi</option>
+            <option style=font-size:110%;> Bangalore</option>
+            <option style=font-size:110%;> Hyderabad</option>
+            <option style=font-size:110%;> Ahmedabad</option>
+            <option style=font-size:110%;> Chennai</option>
+        </select>
+     </td>
+    </tr>
+  
+  
+<!--               
+              <td> <font color="white">Sex</td>
+            <td class="space-gender"><input type="radio"name="gender"size="10"><font color="white"> Male
+            <input type="radio"name="gender"size="10"><font color="white">Female
+            <input type="radio"name="gender"size="10"><font color="white">Others</td> -->
+  
+      
+                  </font>  
+                 </tr>
+  
+  
+                     
+                    <tr>
+                      <td>
+                     <button class="submit">Submit</button></td>
+                    
+                 </tr>
+              
+             </table>
+            <br>
+            <br>
+           
+  
+         
+            </form>
+            </header> 
+  </div>
+
+  <hr size="5" color="red">
+  <iframe class="world" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14736.259831591067!2d88.4500778!3d22.576673699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1643266839459!5m2!1sen!2sin" 
+  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+<hr size="6" color="red">
+ 
+
+<main id="body"> 
+  
+</main> 
+<div id="footer"> 
+  <section id="cta"> 
+      <h2>Call-to-action</h2> 
+      <p>Call-to-action message body.</p> 
+      <form> 
+          <input type="text" placeholder="E-mail address" /> 
+          <input type="submit" value="Try now" /> 
+      </form> 
+  </section> 
+  <section id="resources"> 
+      <h2>Resources</h2> 
+      <div id="modules"> 
+          <h2>Resources</h2> 
+          <div class="module"> 
+              <h3>Product</h3> 
+              <ul> 
+                  <li><a href="">Pricing</a></li> 
+                  <li><a href="">Features</a></li> 
+                  <li><a href="">Documentation</a></li> 
+                  <li><a href="">Developers</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <ul> 
+                  <li><a href="">Mission</a></li> 
+                  <li><a href="">History</a></li> 
+                  <li><a href="">Staff</a></li> 
+                  <li><a href="">Management</a></li> 
+                  <li><a href="">Contact</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Contact</h3> 
+              <ul> 
+                  <li class="mail"><a href="">Support</a></li> 
+                  <li class="phone"><a href="">+0 1 234 567</a></li> 
+                  <li class="twitter"><a href="">@company</a></li> 
+                  <li class="facebook"><a href="">Company</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <p>Text area used for company description, address and company logo.</p> 
+              <ul> 
+                  <li>Company street 123</li> 
+                  <li>123 45 City, Country</li> 
+              </ul> 
+          </div> 
+      </div> 
+  </section> 
+  <div id="signature" aria-hidden="true"></div> 
+  <footer id="legal"> 
+      <p>&copy; 3000 by Company. All rights reserved. Please read the <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p> 
+  </footer> 
+</div> 
+
+
+
+
+
+</html>

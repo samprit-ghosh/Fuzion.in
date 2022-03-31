@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuzion-Sonu Nigam</title><link rel="icon" href="covers/brand.png">
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="singer.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> <link rel="stylesheet" type="text/css" href="style2.css">
+
+
+<body>
+  <nav>
+    <ul>
+        <li class="brand">
+<div id="mySidenav" class="sidenav">
+<center><h3>Quick Access</h3></center>
+<!-- <hr size="10"color="#111"> -->
+<pre> </pre>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="post-login.html">Movies</a>
+<a href="#">Radio</a>
+<a href="#">Old Songs</a>
+<a href="#">New Songs</a>
+<a href="#" >Party</a>
+<a href="#" >Romance</a>
+<a href="#" >90s & early 2000s</a>
+<a href="#" >Album</a>
+<a href="#" >India's Music</a>
+<a href="#">Music Labels</a>
+<a href="#">Genres</a>
+
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+
+
+
+
+}
+</script>
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- 
+<hr color="black" size="6" style="display:flex;
+flex-direction: column;"> -->
+
+
+
+         
+<pre>  </pre>
+<a href="index.html"><img style="zoom: 120%;" src="covers/brand.png" alt="Spotify"></a>
+<a class="spotify" href ="index.html">Fuzion</a></li>
+
+        <!-- <li><a href="https://www.google.co.in/" style="text-decoration: none;
+                                                          color:white;">Google</a></li> -->
+        <li><a  style="text-decoration: none; color: white;" href="about.html" >About</a></li>
+        
+         <li><a class="contact" href="Contact us.html">Contact Us</a></li>
+         
+<div class="dropdown">
+<button class="dropbtn">Artist</button>
+<div class="dropdown-content">
+  
+  <a href="singer.html">Arijit Singh</a>
+  <a href="singer2.html">Atif Aslam</a>
+  <a href="singer3.html">Sonu Nigam</a>
+  <a href="singer4.html">Anupam Roy</a>
+  <a href="singer5.html">shreya Ghoshal</a>
+</div>
+
+
+</div>
+
+
+
+   </ul>      
+</nav>
+</head>
+<body>
+  
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+ <center>
+  <div style="padding:50px">
+    <img class="mobile-310px" style="border-radius: 50%; height: 400px; width: 400px;" src="Sonu Nigam.jpg">
+  </div></center>
+  <center><b><font size="20px" >Top 10 song of Sonu Nigam</font></b><center>
+
+ 
+  <div class="player">
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+      <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+
+  <!-- Load the main script for the player -->
+
+
+  <script>
+      let now_playing = document.querySelector(".now-playing");
+let track_art = document.querySelector(".track-art");
+let track_name = document.querySelector(".track-name");
+let track_artist = document.querySelector(".track-artist");
+
+let playpause_btn = document.querySelector(".playpause-track");
+let next_btn = document.querySelector(".next-track");
+let prev_btn = document.querySelector(".prev-track");
+
+let seek_slider = document.querySelector(".seek_slider");
+let volume_slider = document.querySelector(".volume_slider");
+let curr_time = document.querySelector(".current-time");
+let total_duration = document.querySelector(".total-duration");
+
+let track_index = 0;
+let isPlaying = false;
+let updateTimer;
+
+// Create new audio element
+let curr_track = document.createElement('audio');
+
+// Define the tracks that have to be played
+let track_list = [
+  {
+    name: "Sun Zara",
+    artist: "Sonu Nigam",
+    image: "https://i.ytimg.com/vi/YZLKoG_vhDY/maxresdefault.jpg",
+    path: "singer/Sun Zara.mp3"
+  },
+  {
+    name: "Thoda Sa Pyar",
+    artist: "Sonu Nigam",
+    image: "https://www.thewittyblog.com/wp-content/uploads/2020/10/tera-hone-laga-hoon-lyrics-e1603449230320.jpg",
+    path: "singer/Thoda Sa Pyar.mp3"
+  },
+  {
+    name: "Sau Dard Hai",
+    artist: "Sonu Nigam",
+    image: "https://i.ytimg.com/vi/P8PWN1OmZOA/maxresdefault.jpg",
+    path: "singer/Sau Dard Hai.mp3",
+  },
+
+  {
+    name: "Apnaa Mujhe Tu Lagaa",
+    artist: "Sonu Nigam",
+    image: "https://i.ytimg.com/vi/pB9GZfY82TM/maxresdefault.jpg",
+    path: "singer/Apnaa Mujhe Tu Lagaa  movie.mp3",
+  },
+  {
+    name: "Jaane Nahin Denge",
+    artist: "Sonu Nigam",
+    image: "https://bajikaraoke.com/image/cache/catalog/karaoke/karaoke_2020/atif_aslam/pehli_nazar_main-500x500.png",
+    path: "singer/Jaane Nahin Denge.mp3",
+  },
+  {
+    name: "Zoobi Doobi",
+    artist: "Sonu Nigam",
+    image: "https://lyricstock.in/wp-content/uploads/2020/04/dil-diyan-gallan-lyrics.jpg",
+    path: "singer/Zoobi Doobi.mp3",
+  },
+  {
+    name: "Pal Pal Har Pal",
+    artist: "Sonu Nigam",
+    image: "https://www.lyricshost.com/wp-content/uploads/2020/02/F-1.jpg",
+    path: "singer/Pal Pal Har Pal.mp3",
+  },
+
+  {
+    name: "My Name Is Ali",
+    artist: "Sonu Nigam",
+    image: "https://s2.dmcdn.net/v/QyzCh1TN_0ole-m5t/x1080",
+    path: "singer/My Name Is Ali.mp3",
+  },
+  {
+    name: "Jabse Mere",
+    artist: "Sonu Nigam",
+    image: "http://static.indianexpress.com/m-images/M_Id_387652_Shah_Rukh_Khan.jpg",
+    path: "singer/Jabse Mere.mp3",
+  },
+
+
+  {
+    name: "Main Agar Kahoon",
+    artist: "Sonu Nigam",
+    image: "https://i.ytimg.com/vi/SAWWvbVFTw4/maxresdefault.jpg",
+    path: "singer/Main Agar Kahoon.mp3",
+  },
+
+
+];
+
+
+
+
+function random_bg_color() {
+
+  // Get a number between 64 to 256 (for getting lighter colors)
+  let red = Math.floor(Math.random() * 260) + 70;
+  let purple = Math.floor(Math.random() * 290) + 90;
+  let orange = Math.floor(Math.random() * 300) + 80;
+  // let yellow = Math.floor(Math.random() * 256) + 64;
+  // let pink = Math.floor(Math.random() * 256) + 64;
+  // let purple = Math.floor(Math.random() * 256) + 64;
+
+  // Construct a color withe the given values
+  let bgColor = "rgb(" + red + "," + purple + "," + orange + ")";
+
+
+  // Set the background to that color
+  document.body.style.background = bgColor;
+}
+
+function loadTrack(track_index) {
+  clearInterval(updateTimer);
+  resetValues();
+  curr_track.src = track_list[track_index].path;
+  curr_track.load();
+
+  track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+  track_name.textContent = track_list[track_index].name;
+  track_artist.textContent = track_list[track_index].artist;
+  now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+
+  updateTimer = setInterval(seekUpdate, 1000);
+  curr_track.addEventListener("ended", nextTrack);
+  random_bg_color();
+}
+
+function resetValues() {
+  curr_time.textContent = "00:00";
+  total_duration.textContent = "00:00";
+  seek_slider.value = 0;
+}
+
+// Load the first track in the tracklist
+loadTrack(track_index);
+
+function playpauseTrack() {
+  if (!isPlaying) playTrack();
+  else pauseTrack();
+}
+
+function playTrack() {
+  curr_track.play();
+  isPlaying = true;
+  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+}
+
+function pauseTrack() {
+  curr_track.pause();
+  isPlaying = false;
+  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';;
+}
+
+function nextTrack() {
+  if (track_index < track_list.length - 1)
+    track_index += 1;
+  else track_index = 0;
+  loadTrack(track_index);
+  playTrack();
+}
+
+function prevTrack() {
+  if (track_index > 0)
+    track_index -= 1;
+  else track_index = track_list.length;
+  loadTrack(track_index);
+  playTrack();
+}
+
+function seekTo() {
+  let seekto = curr_track.duration * (seek_slider.value / 100);
+  curr_track.currentTime = seekto;
+}
+
+function setVolume() {
+  curr_track.volume = volume_slider.value / 100;
+}
+
+function seekUpdate() {
+  let seekPosition = 0;
+
+  if (!isNaN(curr_track.duration)) {
+    seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+
+    seek_slider.value = seekPosition;
+
+    let currentMinutes = Math.floor(curr_track.currentTime / 60);
+    let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+    let durationMinutes = Math.floor(curr_track.duration / 60);
+    let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+    if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+    if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+    if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+    if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+    curr_time.textContent = currentMinutes + ":" + currentSeconds;
+    total_duration.textContent = durationMinutes + ":" + durationSeconds;
+  }
+}
+
+
+
+  </script>
+</center>
+</center>
+
+
+
+
+
+<main id="body"> 
+  
+</main> 
+<div id="footer"> 
+  <section id="cta"> 
+      <h2>Call-to-action</h2> 
+      <p>Call-to-action message body.</p> 
+      <form> 
+          <input type="text" placeholder="E-mail address" /> 
+          <input type="submit" value="Try now" /> 
+      </form> 
+  </section> 
+  <section id="resources"> 
+      <h2>Resources</h2> 
+      <div id="modules"> 
+          <h2>Resources</h2> 
+          <div class="module"> 
+              <h3>Product</h3> 
+              <ul> 
+                  <li><a href="">Pricing</a></li> 
+                  <li><a href="">Features</a></li> 
+                  <li><a href="">Documentation</a></li> 
+                  <li><a href="">Developers</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <ul> 
+                  <li><a href="">Mission</a></li> 
+                  <li><a href="">History</a></li> 
+                  <li><a href="">Staff</a></li> 
+                  <li><a href="">Management</a></li> 
+                  <li><a href="">Contact</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Contact</h3> 
+              <ul> 
+                  <li class="mail"><a href="">Support</a></li> 
+                  <li class="phone"><a href="">+0 1 234 567</a></li> 
+                  <li class="twitter"><a href="">@company</a></li> 
+                  <li class="facebook"><a href="">Company</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <p>Text area used for company description, address and company logo.</p> 
+              <ul> 
+                  <li>Company street 123</li> 
+                  <li>123 45 City, Country</li> 
+              </ul> 
+          </div> 
+      </div> 
+  </section> 
+  <div id="signature" aria-hidden="true"></div> 
+  <footer id="legal"> 
+      <p>&copy; 3000 by Company. All rights reserved. Please read the <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p> 
+  </footer> 
+</div> 
+</body>
+</html>
+
+

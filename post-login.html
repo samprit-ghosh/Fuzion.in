@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Fuzion-Movie-Music</title>
+    <link rel = "icon" href ="covers/brand.png">
+
+    <link rel="stylesheet" href="post-login-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+</head>
+
+
+<body class="colour">
+<nav>
+    <ul>
+        <li class="brand">
+<div id="mySidenav" class="sidenav">
+<center><h3>Quick Access</h3></center>
+<!-- <hr size="10"color="#111"> -->
+<pre> </pre>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="post-login.html">Movies</a>
+<a href="#">Radio</a>
+<a href="#">Old Songs</a>
+<a href="#">New Songs</a>
+<a href="#">Party</a>
+<a href="#">Romance</a>
+<a href="#">90s & early 2000s</a>
+<a href="#">Album</a>
+<a href="#">India's Music</a>
+<a href="#">Music Labels</a>
+<a href="#">Genres</a>
+
+
+<center>
+<pre> </pre>
+<span><font size="3"> Dark Mode </font> </span>
+<span class="change">🌛</span>
+
+
+<hr size="20px" color="#111">
+
+
+
+</div>
+</center>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- 
+<hr color="black" size="6" style="display:flex;
+flex-direction: column;"> -->
+
+
+
+         
+<pre>  </pre>
+<a href="index.html"><img style="height: 100% ; zoom:120%;" src="covers/brand.png"></a>
+<a  class="spotify" href ="index.html">Fuzion</a></li>
+
+<li><a  style="text-decoration: none; color: white;" href="about.html" >About</a></li>
+        
+         <li><a class="contact" href="Contact us.html">Contact Us</a></li>
+         
+<div class="dropdown">
+<button class="dropbtn">Artist</button>
+<div class="dropdown-content">
+  
+  <a href="singer.html">Arijit Singh</a>
+  <a href="singer2.html">Atif Aslam</a>
+  <a href="singer3.html">Sonu Nigam</a>
+  <a href="singer4.html">Anupam Roy</a>
+  <a href="singer5.html">shreya Ghoshal</a>
+</div>
+
+
+</div>
+
+
+<font size="5"><span class="change" style="padding: 20px;">🌛</span></font>
+
+     
+<script>
+  $( ".change" ).on("click",function()
+   {
+      if( $( "body" ).hasClass( "dark" ))
+       {
+          $( "body" ).removeClass("dark" );
+          $( ".change" ).text("🌛" );
+
+       }
+      else 
+      {
+          $( "body" ).addClass( "dark" );
+          $( ".change" ).text( "🌘" );
+      }
+  });
+</script>
+
+
+   </ul>      
+</nav>
+</div>
+
+
+      <center> <pre> </pre><b><p style="background-color:blue;padding: 8px;color: beige;">All Your Favourite's Is Here </p></b></center>
+
+
+      <br>
+      <div class="back-photo">
+      <br>
+     <br>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+         <a href="singer.html"> <img class="slide-photo" src="arijit.jpg" style="width:100%"></a>
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+         <a href="singer5.html"><img  class="slide-photo" src="sreya.jpg" style="width:100%"></a>
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+        <a href="singer2.html">  <img  class="slide-photo" src="atif.jpg" style="width:100%"></a>
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+<br>
+<br>
+
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+          
+  <center>
+    <pre>   </pre>
+<div class="sameline">
+    <span class="c1"><a href="movie1.html"><img class="size1" src="covers/g1.png"><span class="overlay" ><span class="text1"><b> Gehraiyaan | 
+    </b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g2.jpg"><span class="overlay"><span class="text1"><b>Piku | Anupam Roy  </b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g3.jpg"><span class="overlay"><span class="text1"><b>Kedarnath | Amit Trivedi</b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g4.jpg"><span class="overlay"><span class="text1"><b>Shaadi Mein Zaroor Aana </b></span></span></span></a>
+</div>
+
+    
+<div class="sameline">
+    <span class="c1"><a href="#"><img class="size1" src="covers/g5.png"><span class="overlay"><span class="text1"><b>Gangubai |Sanjay Leela Bhansali | Shail Hada</b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g6.jpg"><span class="overlay"><span class="text1"> <b>Uri | Shashwat Sachdev | Romy</b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g7.jpg"><span class="overlay"><span class="text1"><b>Mission Mangal | Red FM | U Turn</b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g8.jpg"><span class="overlay"><span class="text1"><b> Aye Dil Hai Mushkil | Pritam | Arijit Singh</b></a>
+  </span></span></span>
+</div>
+
+<div class="sameline">
+    <span class="c1"><a href="#"><img class="size1" src="covers/g9.jpg"><span class="overlay"><span class="text1"><b>Yeh Jawaani Hai Deewani |Pritam| Benny Dayal</b></span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g10.jpg"><span class="overlay"><span class="text1">Dear Zindagi | Amit Trivedi</span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g11.jpg"><span class="overlay"><span class="text1">Phantom | Pritam | Arijit Singh</span></span></span></a>
+    <span class="c1"><a href="#"><img class="size1" src="covers/g12.jpg"><span class="overlay"><span class="text1">Tiger Zinda Hai | Vishal-Shekhar | Neha Bhasin</span></span></span></a>
+</div>
+
+ 
+<div class="sameline">
+  <span class="c1"><a href="#"><img class="size1" src="covers/g13.jpg"><span class="overlay"><span class="text1"><b>Shiddat | Manan Bhardwaj</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g14.jpg"><span class="overlay"><span class="text1"><b>Antaheen | Shantanu Moitra | Shreya Ghoshal</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g15.jpg"><span class="overlay"><span class="text1"><b>Open Tee Bioscope | Anindo Chatterjee</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g16.jpg"><span class="overlay"><span class="text1"><b>Shershaah | Tanishk Bagchi</b></span></span></span></a>
+</div>
+
+ <div class="sameline">
+  <span class="c1"><a href="#"><img class="size1" src="covers/g17.jpg"><span class="overlay"><span class="text1"><b>Atrangi Re | A. R. Rahman | Shreya Ghoshal</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g18.jpg"><span class="overlay"><span class="text1"><b>Sooryavanshi | Pritam | Daler Mehndi</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g19.jpg"><span class="overlay"><span class="text1"><b>Pk | Shantanu Moitra | Shreya Ghoshal</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g20.jpg"><span class="overlay"><span class="text1"><b>Shershaah | Tanishk Bagchi</b></span></span></span></a>
+</div> 
+
+<div class="sameline">
+  <span class="c1"><a href="#"><img class="size1" src="covers/g21.jpg"><span class="overlay"><span class="text1"><b>Jab Tak Hai Jaan |A.R. Rahman| Shreya Ghoshal</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g22.jpg"><span class="overlay"><span class="text1"><b>Aashiqui 2 | Mithoon | Arijit Singh</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g23.jpg"><span class="overlay"><span class="text1"><b>M.s.Dhoni | Amaal Mallik |Armaan Malik</b></span></span></span></a>
+  <span class="c1"><a href="#"><img class="size1" src="covers/g24.jpg"><span class="overlay"><span class="text1"><b>Chhichhore | Pritam | Nakash Aziz</b></span></span></span></a>
+</div>
+
+
+<!--  
+<div class="sameline">
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+   
+</div> -->
+
+<!--     
+<div class="sameline">
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+</div>
+
+<div class="sameline">
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+</div>
+
+    
+<div class="sameline">
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+    <span class="c1"><img class="size1" src="sanu.jpg"></span>
+</div>  -->
+
+<pre>                            
+
+
+</pre>
+
+</center>
+
+<hr size="10" color="red">
+
+</body>
+
+<main id="body"> 
+  
+</main> 
+<div id="footer"> 
+  <section id="cta"> 
+      <h2>Call-to-action</h2> 
+      <p>Call-to-action message body.</p> 
+      <form> 
+          <input type="text" placeholder="E-mail address" /> 
+          <input type="submit" value="Try now" /> 
+      </form> 
+  </section> 
+  <section id="resources"> 
+      <h2>Resources</h2> 
+      <div id="modules"> 
+          <h2>Resources</h2> 
+          <div class="module"> 
+              <h3>Product</h3> 
+              <ul> 
+                  <li><a href="">Pricing</a></li> 
+                  <li><a href="">Features</a></li> 
+                  <li><a href="">Documentation</a></li> 
+                  <li><a href="">Developers</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <ul> 
+                  <li><a href="">Mission</a></li> 
+                  <li><a href="">History</a></li> 
+                  <li><a href="">Staff</a></li> 
+                  <li><a href="">Management</a></li> 
+                  <li><a href="">Contact</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Contact</h3> 
+              <ul> 
+                  <li class="mail"><a href="">Support</a></li> 
+                  <li class="phone"><a href="">+0 1 234 567</a></li> 
+                  <li class="twitter"><a href="">@company</a></li> 
+                  <li class="facebook"><a href="">Company</a></li> 
+              </ul> 
+          </div> 
+          <div class="module"> 
+              <h3>Company</h3> 
+              <p>Text area used for company description, address and company logo.</p> 
+              <ul> 
+                  <li>Company street 123</li> 
+                  <li>123 45 City, Country</li> 
+              </ul> 
+          </div> 
+      </div> 
+  </section> 
+  <div id="signature" aria-hidden="true"></div> 
+  <footer id="legal"> 
+      <p>&copy; 3000 by Company. All rights reserved. Please read the <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p> 
+  </footer> 
+</div> 
+
+</html>
